@@ -36,9 +36,9 @@ class Main {
     int secondNumber = Integer.parseInt(args[1]);
     int thirdNumber = Integer.parseInt(args[2]);
     convert(firstNumber);
-    System.out.print(",");
+    System.out.print(", ");
     convert(secondNumber);
-    System.out.print(",");
+    System.out.print(", ");
     convert(thirdNumber);
     
   }
