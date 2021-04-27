@@ -31,15 +31,15 @@ class Main {
      System.out.print(digitWord);
     }
   }
-  public static void main(String[] args) {//read integers from command line
-    int firstNumber = Integer.parseInt(args[0]);
-    int secondNumber = Integer.parseInt(args[1]);
-    int thirdNumber = Integer.parseInt(args[2]);
-    convert(firstNumber);
-    System.out.print(", ");
-    convert(secondNumber);
-    System.out.print(", ");
-    convert(thirdNumber);
+  public static void main(String[] args) {
+    
+    int number;
+    for(int i=0;i<args.length;i++){// read any amount of integers from command line
+      number =Integer.parseInt(args[i]);
+      convert(number);// convert each number to words and print
+      if(i!=args.length-1)System.out.print(", ");
+    }
+    
     
   }
 }
