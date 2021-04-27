@@ -26,7 +26,8 @@ class Main {
        break;
        case 8:digitWord="Eight";
        break;
-       case 9:digitWord ="Nine"; 
+       case 9:digitWord ="Nine";
+       break; 
      }
      System.out.print(digitWord);
     }
